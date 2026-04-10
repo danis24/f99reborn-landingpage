@@ -5,7 +5,7 @@
     <head>
 
         <!-- ==============================================
-        Basic Page Needs
+        Basic Page Needs & SEO
         =============================================== -->
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -13,11 +13,28 @@
 
         <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
 
-        <title>Fantastic99Bot</title>
+        <title>F99Reborn - Premium Auto Trading Bot</title>
 
-        <meta name="description" content="WE ARE THE F99 BOT - Escape the fad and discover our creative services that will change your financial growth even faster. Fast Trade and Fast Profit">
-        <meta name="subject" content="WE ARE THE DAXF99DICE BOT.">
-        <meta name="author" content="fantastic99 Dev">
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="F99Reborn - Premium Auto Trading Bot">
+        <meta name="description" content="Escape the fad and discover our creative services that will change your financial growth even faster. Fast Trade and Fast Profit with F99Reborn.">
+        <meta name="keywords" content="F99Reborn, Auto Trading Bot, Crypto Bot, Trading Automation, Fast Profit, Multi Trade Bot">
+        <meta name="author" content="Fantastic99 Dev">
+        <meta name="robots" content="index, follow">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://f99reborn.com/">
+        <meta property="og:title" content="F99Reborn - Premium Auto Trading Bot">
+        <meta property="og:description" content="Discover F99Reborn. Enhance your financial growth with automated fast trade and fast profit.">
+        <meta property="og:image" content="assets/images/logo/og-image.png">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://f99reborn.com/">
+        <meta property="twitter:title" content="F99Reborn - Premium Auto Trading Bot">
+        <meta property="twitter:description" content="Discover F99Reborn. Enhance your financial growth with automated fast trade and fast profit.">
+        <meta property="twitter:image" content="assets/images/logo/og-image.png">
 
         <!-- ==============================================
         Favicons
@@ -49,35 +66,195 @@
         =============================================== -->
         <style>
             :root {
-                --header-bg-color: #040402;
-                --nav-item-color: #f5f5f5;
-                --top-nav-item-color: #f5f5f5;
-                --hero-bg-color: #040402;  
+                /* Premium Dark Palette */
+                --primary-color: #00f0ff;
+                --primary-hover: #00b3cc;
+                --secondary-color: #7000ff;
+                --bg-dark-base: #07070b;
+                --bg-dark-surface: rgba(20, 20, 28, 0.7);
+                --text-main: #f5f5f5;
+                --text-muted: #a0a0b0;
+                
+                --header-bg-color: rgba(7, 7, 11, 0.85); /* Glassmorphism */
+                --nav-item-color: var(--text-main);
+                --top-nav-item-color: var(--text-main);
+                --hero-bg-color: var(--bg-dark-base);  
 
-                --section-1-bg-color: #040402;
-                --section-2-bg-color: #040402;
-                --section-3-bg-color: #040402;
-                --section-4-bg-color: #040402;
-                --section-5-bg-color: #040402;
-                --section-6-bg-color: #040402;
-                --section-7-bg-color: #040402;
+                --section-1-bg-color: var(--bg-dark-base);
+                --section-2-bg-color: rgba(12, 12, 18, 0.95);
+                --section-3-bg-color: var(--bg-dark-base);
+                --section-4-bg-color: rgba(12, 12, 18, 0.4);
+                --section-5-bg-color: var(--bg-dark-base);
+                --section-6-bg-color: var(--bg-dark-base);
+                --section-7-bg-color: var(--bg-dark-base);
 
-                --footer-bg-color: rgb(19, 140, 210);
+                --footer-bg-color: #050508;
+            }
 
-                --header-bg-color: rgb(19, 140, 210);
-                --nav-item-color: #f5f5f5;
-                --top-nav-item-color: #f5f5f5;
-                --hero-bg-color: rgb(19, 140, 210);  
+            /* Global Body & Fonts */
+            body {
+                background-color: var(--bg-dark-base) !important;
+                color: var(--text-main);
+                font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            }
 
-                --section-1-bg-color: rgb(19, 140, 210);
-                --section-2-bg-color: rgb(19, 140, 210);
-                --section-3-bg-color: rgb(19, 140, 210);
-                --section-4-bg-color: rgb(19, 140, 210);
-                --section-5-bg-color: rgb(19, 140, 210);
-                --section-6-bg-color: rgb(19, 140, 210);
-                --section-7-bg-color: rgb(19, 140, 210);
+            /* Custom Typography & Headings */
+            h1, h2, h3, h4, h5, h6 {
+                color: #ffffff;
+                font-weight: 700;
+                letter-spacing: -0.5px;
+            }
 
-                --footer-bg-color: rgb(19, 140, 210);
+            h1.title {
+                background: linear-gradient(90deg, #00f0ff, #7000ff);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-transform: uppercase;
+                text-shadow: 0px 4px 15px rgba(112, 0, 255, 0.3);
+            }
+
+            h2.title {
+                background: linear-gradient(90deg, #00f0ff, #7000ff);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            /* Navbar Glassmorphism */
+            #header .navbar {
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            }
+
+            /* Vibrant Buttons */
+            .btn.primary-button, .btn.dark-button {
+                background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)) !important;
+                border: none !important;
+                color: #fff !important;
+                border-radius: 8px !important;
+                padding: 12px 28px !important;
+                font-weight: 600 !important;
+                letter-spacing: 0.5px !important;
+                box-shadow: 0 4px 15px rgba(112, 0, 255, 0.4) !important;
+                transition: all 0.3s ease !important;
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+            }
+            .btn.primary-button:hover, .btn.dark-button:hover {
+                transform: translateY(-2px) !important;
+                box-shadow: 0 8px 25px rgba(0, 240, 255, 0.6) !important;
+                color: #fff !important;
+            }
+
+            /* Premium Card Design with Hover Effects */
+            .card {
+                background: var(--bg-dark-surface) !important;
+                border: 1px solid rgba(255, 255, 255, 0.08) !important;
+                border-radius: 16px !important;
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease !important;
+                padding: 30px 20px;
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+            }
+
+            .card:hover {
+                transform: translateY(-8px) scale(1.02);
+                border-color: rgba(0, 240, 255, 0.4) !important;
+                box-shadow: 0 15px 40px rgba(112, 0, 255, 0.2) !important;
+            }
+
+            .card i.icon {
+                color: var(--primary-color) !important;
+                font-size: 3rem;
+                margin-bottom: 20px;
+                display: inline-block;
+                transition: transform 0.3s ease;
+            }
+
+            .card:hover i.icon {
+                transform: scale(1.1);
+            }
+
+            .card h4 {
+                margin-bottom: 15px;
+                color: #ffffff;
+            }
+
+            .card p {
+                color: var(--text-muted);
+            }
+
+            /* Image Gallery Wrappers inside Cards */
+            .card .gallery {
+                border-radius: 12px;
+                overflow: hidden;
+                margin-top: 15px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .card .gallery img {
+                transition: transform 0.5s ease;
+                width: 100%;
+            }
+            .card .gallery:hover img {
+                transform: scale(1.05);
+            }
+
+            /* Price Tags */
+            .card .price {
+                font-size: 2.5rem;
+                font-weight: 800;
+                color: var(--primary-color);
+                margin: 20px 0;
+                display: block;
+            }
+            .card .price i {
+                font-size: 1rem;
+                color: var(--text-muted);
+                vertical-align: super;
+                margin-left: 5px;
+                font-style: normal;
+            }
+
+            /* List Groups in Pricing Cards */
+            .list-group-item {
+                background: transparent !important;
+                border-color: rgba(255, 255, 255, 0.05) !important;
+                color: var(--text-muted) !important;
+            }
+            .list-group-item i.icon-check {
+                color: #00ff88 !important;
+            }
+
+            /* Animations and Glows */
+            .hero-image {
+                filter: drop-shadow(0 0 30px rgba(112, 0, 255, 0.3));
+                transition: filter 0.3s ease;
+            }
+            .hero-image:hover {
+                filter: drop-shadow(0 0 45px rgba(0, 240, 255, 0.5));
+            }
+
+            /* Fix Section padding */
+            section {
+                padding-top: 5rem !important;
+                padding-bottom: 5rem !important;
+                background-color: transparent;
+            }
+            section.hero {
+                padding-top: 8rem !important;
+            }
+            
+            section.odd {
+                background-color: var(--bg-dark-base) !important;
+            }
+            section.secondary {
+                background-color: rgba(12, 12, 18, 0.95) !important;
             }
         </style>
         
@@ -94,7 +271,7 @@
 
                     <!-- Navbar Brand-->
                     <a class="navbar-brand" href="/">
-                        Fantastic99Bot<i class="version-number">1.1.0</i>
+                        F99Reborn<i class="version-number">1.1.0</i>
                         <!-- 
                             Custom Logo
                             <img src="assets/images/logo.svg" alt="Leverage">
@@ -121,6 +298,9 @@
                         <li class="nav-item">
                             <a href="#buylicense" class="nav-link smooth-anchor">Buy License</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link smooth-anchor">Exchange (Comming Soon)</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -129,18 +309,18 @@
 
         <!-- Hero -->
         <section id="slider" class="hero p-0 odd featured all">
-            <div class="swiper-container no-slider animation slider-h-100">
+            <div id="particles-hero" class="swiper-container no-slider animation slider-h-100 particles" data-particle="space">
                 <div class="swiper-wrapper">
 
                     <!-- Item 1 -->
                     <div class="swiper-slide slide-center">
-                        <img data-aos="zoom-out-up" data-aos-delay="800" src="assets/images/logo/bg_hero.png" class="hero-image" alt="Hero Image">
+                        <img data-aos="zoom-out-up" data-aos-delay="800" src="assets/images/logo/bg_hero.png" class="hero-image" alt="Hero Image" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.5">
                         <div class="slide-content row" data-mask-768="50">
                             <div class="col-12 d-flex inner">
                                 <div class="left align-self-center text-center text-md-left">
-                                    <h1 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">WE ARE THE FANTASTIC99 BOT.</h1>
+                                    <h1 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">WE ARE THE F99REBORN BOT.</h1>
                                     <p data-aos="zoom-out-up" data-aos-delay="800" class="description">Escape the fad and discover our creative services that will change your financial growth even faster. Fast Trade and Fast Profit.</p>
-                                    <p data-aos="zoom-out-up" data-aos-delay="800" class="description"><i>*fantastic99 is just a robot. while the broker can change at any time according to the management and developer team</i></p>
+                                    <p data-aos="zoom-out-up" data-aos-delay="800" class="description"><i>*F99Reborn is just a robot. while the broker can change at any time according to the management and developer team</i></p>
                                     <a href="#downloads" data-aos="zoom-out-up" data-aos-delay="1200" class="smooth-anchor ml-auto mr-auto ml-md-0 mt-4 btn dark-button"><i class="icon-cup"></i>Downloads Now</a>
                                 </div>
                             </div>
@@ -414,10 +594,7 @@
                                 <div class="center align-self-center text-center">
                                     <h2 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">ARE YOU READY?</h2>
                                     <p data-aos="zoom-out-up" data-aos-delay="800" class="description ml-auto mr-auto">We are driven by creativity. We create innovative things to help you fast profit with fast trade.</p>
-                                    <a href="downloads/F99_MultiTrade_V1.1.0_STABLE.apk" target="_blank" data-aos="zoom-out-up" data-aos-delay="1200" class="ml-auto mr-auto mt-5 btn primary-button"><i class="icon-rocket"></i>DOWNLOAD APK (Multi Trade V1.1.0) - Duckdice</a>
-                                    <a href="downloads/F99_SingleTrade_V1.1.0_STABLE.apk" target="_blank" data-aos="zoom-out-up" data-aos-delay="1200" class="ml-auto mr-auto mt-5 btn primary-button"><i class="icon-rocket"></i>DOWNLOAD APK (Single Trade v1.1.0) - Pasino</a>
-                                    <a href="downloads/F99WOLF_MULTI_V1.1.apk" target="_blank" data-aos="zoom-out-up" data-aos-delay="1200" class="ml-auto mr-auto mt-5 btn primary-button"><i class="icon-rocket"></i>DOWNLOAD APK (Multi Trade v1.1.1) - Wolf.bet</a>
-                                    <a href="downloads/F99WOLF_SINGLE_V1.1.apk" target="_blank" data-aos="zoom-out-up" data-aos-delay="1200" class="ml-auto mr-auto mt-5 btn primary-button"><i class="icon-rocket"></i>DOWNLOAD APK (Multi Single v1.1.1) - Wolf.bet</a>
+                                    <a href="#" data-aos="zoom-out-up" data-aos-delay="1200" class="ml-auto mr-auto mt-5 btn primary-button"><i class="icon-rocket"></i>Comming Soon</a>
                                 </div>
                             </div>
                         </div>
@@ -427,18 +604,16 @@
             </div>
         </section>
 
-        <section id="buylicense" class="section-3 hero odd p-0 featured all">
+        <!-- <section id="buylicense" class="section-3 hero odd p-0 featured all">
             <div class="swiper-container no-slider animation slider-h-100">
                 <div class="swiper-wrapper">
-                    <!-- Item 1 -->
                     <div class="swiper-slide slide-center">
                         <div class="slide-content row">
                             <div class="col-12 d-flex inner">
                                 <div class="center align-self-center text-center">
-                                    <h2 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">BUY WOLF BOT LICENSE WITH PREMIUM SERVICE</h2>
-                                    <p data-aos="zoom-out-up" data-aos-delay="800" class="description ml-auto mr-auto">Chat our admin for buy license wolf</p>
+                                    <h2 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">BUY BOT LICENSE WITH PREMIUM SERVICE</h2>
                                     <a href="https://api.whatsapp.com/send?phone=6282137656521&text=Halo%20Admin,%20Saya%20ingin%20membeli%20licensi%20untuk%20bot%20broker%20wolf" target="_blank" data-aos="zoom-out-up" data-aos-delay="1200" class="ml-auto mr-auto mt-5 btn primary-button"><i class="icon-rocket"></i>CHAT ADMIN</a>
-                                    <a href="#" target="_blank" data-aos="zoom-out-up" data-aos-delay="1200" class="ml-auto mr-auto mt-5 btn primary-button"><i class="icon-rocket"></i>BUY ONLINE (COMMING SOON)</a>
+                                    <a href="#" target="_blank" data-aos="zoom-out-up" data-aos-delay="1200" class="ml-auto mr-auto mt-5 btn primary-button"><i class="icon-rocket"></i>BUY BOW</a>
                                 </div>
                             </div>
                         </div>
@@ -446,7 +621,141 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
+        </section> -->
+
+        <section id="buylicense" class="section-4 plans featured left">
+            <div class="container">
+
+                <!-- Stake -->
+                <div class="row text-center intro">
+                    <div class="col-12">
+                        <h2 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">BUY STAKE BOT LICENSE WITH PREMIUM SERVICE</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center items">
+                    <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
+                        <div class="card">
+                            <i class="icon icon-handbag"></i>
+                            <h4>7 Days</h4>
+                            <span class="price">75<i>IDR</i></span>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>7 Days Active License</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>Premium Stake Bot Access</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                            </ul>
+                            <a href="https://digitalinscribe.myr.id/app/f99-stakebot-7day" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
+                        <div class="card">
+                            <i class="icon icon-fire"></i>
+                            <h4>1 Month</h4>
+                            <span class="price">250<i>IDR</i></span>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>1 Month Active License</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>Premium Stake Bot Access</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                            </ul>
+                            <a href="https://digitalinscribe.myr.id/app/f99-stakebot-1month" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
+                        <div class="card">
+                            <i class="icon icon-diamond"></i>
+                            <h4>1 Years</h4>
+                            <span class="price">2.500<i>IDR</i></span>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>1 Year Active License</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>Premium Stake Bot Access</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                            </ul>
+                            <a href="https://digitalinscribe.myr.id/app/f99-stakebot-1year" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Wolf -->
+                <div class="row text-center intro">
+                    <div class="col-12">
+                        <h2 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">BUY WOLF BOT LICENSE WITH PREMIUM SERVICE</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center items">
+                    <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
+                        <div class="card">
+                            <i class="icon icon-handbag"></i>
+                            <h4>7 Days</h4>
+                            <span class="price">30<i>doge</i></span>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>7 Days Active License</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>Premium Wolf Bot Access</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                            </ul>
+                            <button onclick="orderLicense('wolf_7')" class="smooth-anchor btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
+                        <div class="card">
+                            <i class="icon icon-fire"></i>
+                            <h4>1 Month</h4>
+                            <span class="price">100<i>doge</i></span>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>1 Month Active License</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>Premium Wolf Bot Access</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                            </ul>
+                            <button onclick="orderLicense('wolf_30')" class="smooth-anchor btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
+                        <div class="card">
+                            <i class="icon icon-diamond"></i>
+                            <h4>1 Years</h4>
+                            <span class="price">1100<i>doge</i></span>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>1 Year Active License</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                    <span>Premium Wolf Bot Access</span>
+                                    <i class="icon-min m-0 icon-check text-right"></i>
+                                </li>
+                            </ul>
+                            <button onclick="orderLicense('wolf_1y')" class="smooth-anchor btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        
         
         <!-- Footer -->
         <footer class="odd">
@@ -462,7 +771,7 @@
                              -->
                         </div>
                         <div class="col-12 col-md-6 p-3 text-center text-lg-right">
-                            <p>© 2022 Fantastic99 is Proudly Powered by <a href="https://fantastic99Bot.com" target="_blank">Fantastic99 BOT Dev</a>.</p>
+                            <p>© 2023 Fantastic99 is Proudly Powered by <a href="https://fantastic99Bot.com" target="_blank">Fantastic99 BOT Dev</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -633,7 +942,10 @@
         <script src="assets/js/vendor/shuffle.min.js"></script>
         <script src="assets/js/vendor/cookie-notice.min.js"></script>
         <script src="assets/js/vendor/particles.min.js"></script>
+        <!-- Vanilla Tilt JS for Interactive 3D hover effects -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/order.js"></script>
 
         <!-- #endregion Global ========================= -->
 
