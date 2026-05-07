@@ -121,11 +121,175 @@
                 -webkit-text-fill-color: transparent;
             }
 
-            /* Navbar Glassmorphism */
+            /* Header & Navbar Premium Glassmorphism */
+            #header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 1000;
+                transition: all 0.3s ease;
+            }
             #header .navbar {
-                backdrop-filter: blur(10px);
-                -webkit-backdrop-filter: blur(10px);
-                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+                background: rgba(7, 7, 11, 0.7);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+                padding: 15px 0;
+            }
+
+            .navbar-brand {
+                font-size: 1.5rem;
+                font-weight: 800;
+                color: #ffffff !important;
+                letter-spacing: -0.5px;
+                display: flex;
+                align-items: center;
+            }
+            
+            .navbar-brand .version-number {
+                font-size: 0.75rem;
+                color: var(--primary-color);
+                margin-left: 8px;
+                font-weight: 700;
+                background: rgba(0, 240, 255, 0.1);
+                border: 1px solid rgba(0, 240, 255, 0.2);
+                padding: 2px 8px;
+                border-radius: 6px;
+                font-style: normal;
+            }
+
+            .navbar-nav .nav-link {
+                color: var(--text-main) !important;
+                font-weight: 500;
+                padding: 10px 16px !important;
+                transition: all 0.3s ease;
+                position: relative;
+            }
+            
+            .navbar-nav .nav-link:hover {
+                color: var(--primary-color) !important;
+            }
+
+            .navbar-nav .nav-item > .nav-link::after {
+                content: '';
+                position: absolute;
+                bottom: 2px;
+                left: 16px;
+                right: 16px;
+                height: 2px;
+                background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+                transform: scaleX(0);
+                transition: transform 0.3s ease;
+                transform-origin: center;
+                border-radius: 2px;
+            }
+
+            .navbar-nav .nav-item > .nav-link:hover::after {
+                transform: scaleX(1);
+            }
+
+            .navbar-toggler {
+                border: none !important;
+                outline: none !important;
+                color: #ffffff;
+                padding: 5px 10px;
+                font-size: 1.5rem;
+                background: rgba(255,255,255,0.05);
+                border-radius: 8px;
+                transition: all 0.3s ease;
+            }
+
+            .navbar-toggler:hover {
+                background: rgba(255,255,255,0.1);
+            }
+
+            .navbar-toggler:focus {
+                box-shadow: 0 0 0 3px rgba(0, 240, 255, 0.3);
+            }
+
+            @media (max-width: 991px) {
+                #header .navbar {
+                    padding: 12px 0;
+                }
+                #header .navbar-toggler,
+                #header .navbar-collapse {
+                    display: none !important;
+                }
+                body {
+                    padding-bottom: 90px !important;
+                }
+            }
+
+            /* Mobile Bottom Navigation */
+            .mobile-bottom-nav {
+                position: fixed;
+                bottom: 15px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 92%;
+                max-width: 400px;
+                background: rgba(12, 12, 18, 0.95);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                border-radius: 20px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 12px 15px;
+                z-index: 1050;
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+            }
+
+            .mobile-bottom-nav .bottom-nav-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: var(--text-muted);
+                text-decoration: none;
+                font-size: 0.7rem;
+                font-weight: 500;
+                transition: all 0.3s ease;
+            }
+
+            .mobile-bottom-nav .bottom-nav-item i {
+                font-size: 1.4rem;
+                margin-bottom: 4px;
+                transition: transform 0.3s ease;
+            }
+
+            .mobile-bottom-nav .bottom-nav-item:hover, 
+            .mobile-bottom-nav .bottom-nav-item.active {
+                color: var(--primary-color);
+            }
+
+            .mobile-bottom-nav .bottom-nav-item:hover i {
+                transform: translateY(-3px);
+            }
+
+            .mobile-bottom-nav .center-btn {
+                position: relative;
+                top: -25px;
+            }
+
+            .mobile-bottom-nav .center-btn .inner-btn {
+                width: 60px;
+                height: 60px;
+                background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff !important;
+                font-size: 1.8rem;
+                box-shadow: 0 10px 20px rgba(112, 0, 255, 0.4);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .mobile-bottom-nav .center-btn .inner-btn:hover {
+                transform: scale(1.1);
+                box-shadow: 0 15px 30px rgba(0, 240, 255, 0.6);
             }
 
             /* Vibrant Buttons */
@@ -266,46 +430,79 @@
         <header id="header">
 
             <!-- Navbar -->
-            <nav data-aos="zoom-out" data-aos-delay="800" class="navbar navbar-expand">
+            <nav data-aos="zoom-in" data-aos-delay="400" class="navbar navbar-expand-lg">
                 <div class="container header">
 
                     <!-- Navbar Brand-->
                     <a class="navbar-brand" href="/">
-                        F99Reborn<i class="version-number">1.1.0</i>
-                        <!-- 
-                            Custom Logo
-                            <img src="assets/images/logo.svg" alt="Leverage">
-                        -->
+                        F99Reborn <span class="version-number">v1.1.0</span>
                     </a>
 
-                    <!-- Nav holder -->
-                    <div class="ml-auto"></div>
+                    <!-- Mobile Toggle Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="icon-menu"></i>
+                    </button>
 
-                    <!-- Navbar Items -->
-                    <ul class="navbar-nav items">
-                        <li class="nav-item dropdown">
-                            <a href="/" class="nav-link smooth-anchor">Home</i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#features" class="nav-link smooth-anchor">Feature</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#portfolio" class="nav-link smooth-anchor">Screens</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#downloads" class="nav-link smooth-anchor">Downloads</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#buylicense" class="nav-link smooth-anchor">Buy License</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link smooth-anchor">Exchange (Comming Soon)</a>
-                        </li>
-                    </ul>
+                    <!-- Navbar Collapse -->
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <!-- Nav holder -->
+                        <div class="ml-auto"></div>
+
+                        <!-- Navbar Items -->
+                        <ul class="navbar-nav items align-items-lg-center">
+                            <li class="nav-item">
+                                <a href="/" class="nav-link smooth-anchor">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#features" class="nav-link smooth-anchor">Feature</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#portfolio" class="nav-link smooth-anchor">Screens</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#downloads" class="nav-link smooth-anchor">Downloads</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#buylicense" class="nav-link smooth-anchor">Buy License</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link smooth-anchor">Exchange (Coming Soon)</a>
+                            </li>
+                            <li class="nav-item d-flex auth-actions ml-lg-4 mt-3 mt-lg-0">
+                                <a href="https://members.fantastic99reborn.web.id/members/login" target="_blank" class="btn dark-button mr-lg-3" style="padding: 10px 24px !important;">Login</a>
+                                <a href="https://members.fantastic99reborn.web.id/members/register" target="_blank" class="btn primary-button" style="padding: 10px 24px !important;">Register</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
 
         </header>
+
+        <!-- Mobile Bottom Navigation -->
+        <div class="mobile-bottom-nav d-lg-none">
+            <a href="/" class="bottom-nav-item active smooth-anchor">
+                <i class="icon-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#buylicense" class="bottom-nav-item smooth-anchor">
+                <i class="icon-handbag"></i>
+                <span>Buy</span>
+            </a>
+            <div class="bottom-nav-item center-btn">
+                <a href="#downloads" class="inner-btn smooth-anchor">
+                    <i class="icon-rocket"></i>
+                </a>
+            </div>
+            <a href="https://members.fantastic99reborn.web.id/members/login" target="_blank" class="bottom-nav-item">
+                <i class="icon-login"></i>
+                <span>Login</span>
+            </a>
+            <a href="https://members.fantastic99reborn.web.id/members/register" target="_blank" class="bottom-nav-item">
+                <i class="icon-user"></i>
+                <span>Register</span>
+            </a>
+        </div>
 
         <!-- Hero -->
         <section id="slider" class="hero p-0 odd featured all">
@@ -489,8 +686,8 @@
                         <div class="card featured">
                             <h4>Trade Page</h4>
                             <div class="gallery">
-                                <a href="assets/images/screens/wolfmulti/1.png">
-                                    <img src="assets/images/screens/wolfmulti/1.png" alt="Trade Page">
+                                <a href="assets/images/screens/wolfmulti/1.jpeg">
+                                    <img src="assets/images/screens/wolfmulti/1.jpeg" alt="Trade Page">
                                 </a>
                             </div>
                         </div>
@@ -499,8 +696,8 @@
                         <div class="card">
                             <h4>Setting Page</h4>
                             <div class="gallery">
-                                <a href="assets/images/screens/wolfmulti/2.png">
-                                    <img src="assets/images/screens/wolfmulti/2.png" alt="Setting Page">
+                                <a href="assets/images/screens/wolfmulti/2.jpeg">
+                                    <img src="assets/images/screens/wolfmulti/2.jpeg" alt="Setting Page">
                                 </a>
                             </div>
                         </div>
@@ -509,8 +706,8 @@
                         <div class="card featured">
                             <h4>Statistic Page</h4>
                             <div class="gallery">
-                                <a href="assets/images/screens/wolfmulti/3.png">
-                                    <img src="assets/images/screens/wolfmulti/3.png" alt="Statistic Page">
+                                <a href="assets/images/screens/wolfmulti/3.jpeg">
+                                    <img src="assets/images/screens/wolfmulti/3.jpeg" alt="Statistic Page">
                                 </a>
                             </div>
                         </div>
@@ -519,8 +716,8 @@
                         <div class="card featured">
                             <h4>Account Page</h4>
                             <div class="gallery">
-                                <a href="assets/images/screens/wolfmulti/4.png">
-                                    <img src="assets/images/screens/wolfmulti/4.png" alt="Account Page">
+                                <a href="assets/images/screens/wolfmulti/4.jpeg">
+                                    <img src="assets/images/screens/wolfmulti/4.jpeg" alt="Account Page">
                                 </a>
                             </div>
                         </div>
@@ -543,8 +740,8 @@
                         <div class="card featured">
                             <h4>Trade Page</h4>
                             <div class="gallery">
-                                <a href="assets/images/screens/wolfsingle/1.png">
-                                    <img src="assets/images/screens/wolfsingle/1.png" alt="Trade Page">
+                                <a href="assets/images/screens/wolfsingle/1.jpeg">
+                                    <img src="assets/images/screens/wolfsingle/1.jpeg" alt="Trade Page">
                                 </a>
                             </div>
                         </div>
@@ -553,8 +750,8 @@
                         <div class="card">
                             <h4>Setting Page</h4>
                             <div class="gallery">
-                                <a href="assets/images/screens/wolfsingle/2.png">
-                                    <img src="assets/images/screens/wolfsingle/2.png" alt="Setting Page">
+                                <a href="assets/images/screens/wolfsingle/2.jpeg">
+                                    <img src="assets/images/screens/wolfsingle/2.jpeg" alt="Setting Page">
                                 </a>
                             </div>
                         </div>
@@ -563,8 +760,8 @@
                         <div class="card featured">
                             <h4>Statistic Page</h4>
                             <div class="gallery">
-                                <a href="assets/images/screens/wolfsingle/3.png">
-                                    <img src="assets/images/screens/wolfsingle/3.png" alt="Statistic Page">
+                                <a href="assets/images/screens/wolfsingle/3.jpeg">
+                                    <img src="assets/images/screens/wolfsingle/3.jpeg" alt="Statistic Page">
                                 </a>
                             </div>
                         </div>
@@ -573,8 +770,8 @@
                         <div class="card featured">
                             <h4>Account Page</h4>
                             <div class="gallery">
-                                <a href="assets/images/screens/wolfsingle/4.png">
-                                    <img src="assets/images/screens/wolfsingle/4.png" alt="Account Page">
+                                <a href="assets/images/screens/wolfsingle/4.jpeg">
+                                    <img src="assets/images/screens/wolfsingle/4.jpeg" alt="Account Page">
                                 </a>
                             </div>
                         </div>
@@ -646,8 +843,17 @@
                             <div class="col-12 d-flex inner">
                                 <div class="center align-self-center text-center">
                                     <h2 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">ARE YOU READY?</h2>
-                                    <p data-aos="zoom-out-up" data-aos-delay="800" class="description ml-auto mr-auto">We are driven by creativity. We create innovative things to help you fast profit with fast trade.</p>
-                                    <a href="#" data-aos="zoom-out-up" data-aos-delay="1200" class="ml-auto mr-auto mt-5 btn primary-button"><i class="icon-rocket"></i>Comming Soon</a>
+                                    <p data-aos="zoom-out-up" data-aos-delay="800" class="description ml-auto mr-auto">We are driven by creativity. We create innovative things to help you fast profit with fast trade. Download our applications below.</p>
+                                    <div class="d-flex flex-column align-items-center mt-5" data-aos="zoom-out-up" data-aos-delay="1200">
+                                        <a href="apks/F99StakeBot1.0.apk" download class="mb-4 btn primary-button d-flex align-items-center justify-content-center" style="width: 100%; max-width: 350px; padding: 18px 30px !important; font-size: 1.2rem !important;">
+                                            <i class="icon-cloud-download mr-3" style="font-size: 1.8rem;"></i>
+                                            <span>Download Stake Bot APK</span>
+                                        </a>
+                                        <a href="apks/F99WolfSingleBot1.0.apk" download class="btn dark-button d-flex align-items-center justify-content-center" style="width: 100%; max-width: 350px; padding: 18px 30px !important; font-size: 1.2rem !important;">
+                                            <i class="icon-cloud-download mr-3" style="font-size: 1.8rem;"></i>
+                                            <span>Download Wolf Bot APK</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -701,7 +907,7 @@
                                     <i class="icon-min m-0 icon-check text-right"></i>
                                 </li>
                             </ul>
-                            <a href="https://digitalinscribe.myr.id/app/f99-stakebot-7day" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
+                            <a href="https://members.fantastic99reborn.web.id/members/checkout/1" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
@@ -719,7 +925,7 @@
                                     <i class="icon-min m-0 icon-check text-right"></i>
                                 </li>
                             </ul>
-                            <a href="https://digitalinscribe.myr.id/app/f99-stakebot-1month" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
+                            <a href="https://members.fantastic99reborn.web.id/members/checkout/2" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
@@ -737,7 +943,7 @@
                                     <i class="icon-min m-0 icon-check text-right"></i>
                                 </li>
                             </ul>
-                            <a href="https://digitalinscribe.myr.id/app/f99-stakebot-1year" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
+                            <a href="https://members.fantastic99reborn.web.id/members/checkout/3" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
                         </div>
                     </div>
                 </div>
@@ -764,7 +970,7 @@
                                     <i class="icon-min m-0 icon-check text-right"></i>
                                 </li>
                             </ul>
-                            <a href="https://digitalinscribe.myr.id/app/f99-stakebot-7day" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
+                            <a href="https://members.fantastic99reborn.web.id/members/checkout/4" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
@@ -782,7 +988,7 @@
                                     <i class="icon-min m-0 icon-check text-right"></i>
                                 </li>
                             </ul>
-                            <a href="https://digitalinscribe.myr.id/app/f99-stakebot-1month" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
+                            <a href="https://members.fantastic99reborn.web.id/members/checkout/5" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
@@ -800,7 +1006,7 @@
                                     <i class="icon-min m-0 icon-check text-right"></i>
                                 </li>
                             </ul>
-                            <a href="https://digitalinscribe.myr.id/app/f99-stakebot-1year" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
+                            <a href="https://members.fantastic99reborn.web.id/members/checkout/6" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
                         </div>
                     </div>
                 </div>
