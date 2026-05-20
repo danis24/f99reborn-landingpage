@@ -2,818 +2,866 @@
 
 <html lang="en">
 
-    <head>
+<head>
 
-        <!-- ==============================================
+    <!-- ==============================================
         Basic Page Needs & SEO
         =============================================== -->
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
 
-        <title>F99Reborn - Premium Auto Trading Bot</title>
+    <title>F99Reborn - Premium Auto Trading Bot</title>
 
-        <!-- Primary Meta Tags -->
-        <meta name="title" content="F99Reborn - Premium Auto Trading Bot">
-        <meta name="description" content="Escape the fad and discover our creative services that will change your financial growth even faster. Fast Trade and Fast Profit with F99Reborn.">
-        <meta name="keywords" content="F99Reborn, Auto Trading Bot, Crypto Bot, Trading Automation, Fast Profit, Multi Trade Bot">
-        <meta name="author" content="Fantastic99 Dev">
-        <meta name="robots" content="index, follow">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="F99Reborn - Premium Auto Trading Bot">
+    <meta name="description"
+        content="Escape the fad and discover our creative services that will change your financial growth even faster. Fast Trade and Fast Profit with F99Reborn.">
+    <meta name="keywords"
+        content="F99Reborn, Auto Trading Bot, Crypto Bot, Trading Automation, Fast Profit, Multi Trade Bot">
+    <meta name="author" content="Fantastic99 Dev">
+    <meta name="robots" content="index, follow">
 
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://f99reborn.com/">
-        <meta property="og:title" content="F99Reborn - Premium Auto Trading Bot">
-        <meta property="og:description" content="Discover F99Reborn. Enhance your financial growth with automated fast trade and fast profit.">
-        <meta property="og:image" content="assets/images/logo/og-image.png">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://f99reborn.com/">
+    <meta property="og:title" content="F99Reborn - Premium Auto Trading Bot">
+    <meta property="og:description"
+        content="Discover F99Reborn. Enhance your financial growth with automated fast trade and fast profit.">
+    <meta property="og:image" content="assets/images/logo/og-image.png">
 
-        <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:url" content="https://f99reborn.com/">
-        <meta property="twitter:title" content="F99Reborn - Premium Auto Trading Bot">
-        <meta property="twitter:description" content="Discover F99Reborn. Enhance your financial growth with automated fast trade and fast profit.">
-        <meta property="twitter:image" content="assets/images/logo/og-image.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://f99reborn.com/">
+    <meta property="twitter:title" content="F99Reborn - Premium Auto Trading Bot">
+    <meta property="twitter:description"
+        content="Discover F99Reborn. Enhance your financial growth with automated fast trade and fast profit.">
+    <meta property="twitter:image" content="assets/images/logo/og-image.png">
 
-        <!-- ==============================================
+    <!-- ==============================================
         Favicons
         =============================================== -->
-        <link rel="shortcut icon" href="assets/images/logo/favicon.png">
-        <link rel="apple-touch-icon" href="assets/images/logo/favicon.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/logo/favicon.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/logo/favicon.png">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/logo/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/logo/favicon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/logo/favicon.png">
 
-        <!-- ==============================================
+    <!-- ==============================================
         Vendor Stylesheet
         =============================================== -->
-        <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/vendor/slider.min.css">
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/vendor/icons.min.css">
-        <link rel="stylesheet" href="assets/css/vendor/animation.min.css">
-        <link rel="stylesheet" href="assets/css/vendor/gallery.min.css">
-        <link rel="stylesheet" href="assets/css/vendor/cookie-notice.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/slider.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/vendor/icons.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/animation.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/gallery.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/cookie-notice.min.css">
 
-        <!-- ==============================================
+    <!-- ==============================================
         Custom Stylesheet
         =============================================== -->
-        <link rel="stylesheet" href="assets/css/default.css">
-        <link rel="stylesheet" href="assets/css/theme-pink.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/theme-pink.css">
 
-        <!-- ==============================================
+    <!-- ==============================================
         Theme Settings
         =============================================== -->
-        <style>
-            :root {
-                /* Premium Dark Palette */
-                --primary-color: #00f0ff;
-                --primary-hover: #00b3cc;
-                --secondary-color: #7000ff;
-                --bg-dark-base: #07070b;
-                --bg-dark-surface: rgba(20, 20, 28, 0.7);
-                --text-main: #f5f5f5;
-                --text-muted: #a0a0b0;
-                
-                --header-bg-color: rgba(7, 7, 11, 0.85); /* Glassmorphism */
-                --nav-item-color: var(--text-main);
-                --top-nav-item-color: var(--text-main);
-                --hero-bg-color: var(--bg-dark-base);  
+    <style>
+        :root {
+            /* Premium Dark Palette */
+            --primary-color: #00f0ff;
+            --primary-hover: #00b3cc;
+            --secondary-color: #7000ff;
+            --bg-dark-base: #07070b;
+            --bg-dark-surface: rgba(20, 20, 28, 0.7);
+            --text-main: #f5f5f5;
+            --text-muted: #a0a0b0;
 
-                --section-1-bg-color: var(--bg-dark-base);
-                --section-2-bg-color: rgba(12, 12, 18, 0.95);
-                --section-3-bg-color: var(--bg-dark-base);
-                --section-4-bg-color: rgba(12, 12, 18, 0.4);
-                --section-5-bg-color: var(--bg-dark-base);
-                --section-6-bg-color: var(--bg-dark-base);
-                --section-7-bg-color: var(--bg-dark-base);
+            --header-bg-color: rgba(7, 7, 11, 0.85);
+            /* Glassmorphism */
+            --nav-item-color: var(--text-main);
+            --top-nav-item-color: var(--text-main);
+            --hero-bg-color: var(--bg-dark-base);
 
-                --footer-bg-color: #050508;
-            }
+            --section-1-bg-color: var(--bg-dark-base);
+            --section-2-bg-color: rgba(12, 12, 18, 0.95);
+            --section-3-bg-color: var(--bg-dark-base);
+            --section-4-bg-color: rgba(12, 12, 18, 0.4);
+            --section-5-bg-color: var(--bg-dark-base);
+            --section-6-bg-color: var(--bg-dark-base);
+            --section-7-bg-color: var(--bg-dark-base);
 
-            /* Global Body & Fonts */
-            body {
-                background-color: var(--bg-dark-base) !important;
-                color: var(--text-main);
-                font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            }
+            --footer-bg-color: #050508;
+        }
 
-            /* Custom Typography & Headings */
-            h1, h2, h3, h4, h5, h6 {
-                color: #ffffff;
-                font-weight: 700;
-                letter-spacing: -0.5px;
-            }
+        /* Global Body & Fonts */
+        body {
+            background-color: var(--bg-dark-base) !important;
+            color: var(--text-main);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
 
-            h1.title {
-                background: linear-gradient(90deg, #00f0ff, #7000ff);
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-                text-transform: uppercase;
-                text-shadow: 0px 4px 15px rgba(112, 0, 255, 0.3);
-            }
+        /* Custom Typography & Headings */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
 
-            h2.title {
-                background: linear-gradient(90deg, #00f0ff, #7000ff);
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
+        h1.title {
+            background: linear-gradient(90deg, #00f0ff, #7000ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            text-shadow: 0px 4px 15px rgba(112, 0, 255, 0.3);
+        }
 
-            /* Header & Navbar Premium Glassmorphism */
-            #header {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                z-index: 1000;
-                transition: all 0.3s ease;
-            }
+        h2.title {
+            background: linear-gradient(90deg, #00f0ff, #7000ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Header & Navbar Premium Glassmorphism */
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        #header .navbar {
+            background: rgba(7, 7, 11, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #ffffff !important;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand .version-number {
+            font-size: 0.75rem;
+            color: var(--primary-color);
+            margin-left: 8px;
+            font-weight: 700;
+            background: rgba(0, 240, 255, 0.1);
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-style: normal;
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--text-main) !important;
+            font-weight: 500;
+            padding: 10px 16px !important;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        .navbar-nav .nav-item>.nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 16px;
+            right: 16px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            transform-origin: center;
+            border-radius: 2px;
+        }
+
+        .navbar-nav .nav-item>.nav-link:hover::after {
+            transform: scaleX(1);
+        }
+
+        .navbar-toggler {
+            border: none !important;
+            outline: none !important;
+            color: #ffffff;
+            padding: 5px 10px;
+            font-size: 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-toggler:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: 0 0 0 3px rgba(0, 240, 255, 0.3);
+        }
+
+        @media (max-width: 991px) {
             #header .navbar {
-                background: rgba(7, 7, 11, 0.7);
-                backdrop-filter: blur(20px);
-                -webkit-backdrop-filter: blur(20px);
-                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-                padding: 15px 0;
+                padding: 12px 0;
             }
 
-            .navbar-brand {
-                font-size: 1.5rem;
-                font-weight: 800;
-                color: #ffffff !important;
-                letter-spacing: -0.5px;
-                display: flex;
-                align-items: center;
-            }
-            
-            .navbar-brand .version-number {
-                font-size: 0.75rem;
-                color: var(--primary-color);
-                margin-left: 8px;
-                font-weight: 700;
-                background: rgba(0, 240, 255, 0.1);
-                border: 1px solid rgba(0, 240, 255, 0.2);
-                padding: 2px 8px;
-                border-radius: 6px;
-                font-style: normal;
+            #header .navbar-toggler,
+            #header .navbar-collapse {
+                display: none !important;
             }
 
-            .navbar-nav .nav-link {
-                color: var(--text-main) !important;
-                font-weight: 500;
-                padding: 10px 16px !important;
-                transition: all 0.3s ease;
-                position: relative;
+            body {
+                padding-bottom: 90px !important;
             }
-            
-            .navbar-nav .nav-link:hover {
-                color: var(--primary-color) !important;
-            }
+        }
 
-            .navbar-nav .nav-item > .nav-link::after {
-                content: '';
-                position: absolute;
-                bottom: 2px;
-                left: 16px;
-                right: 16px;
-                height: 2px;
-                background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-                transform: scaleX(0);
-                transition: transform 0.3s ease;
-                transform-origin: center;
-                border-radius: 2px;
-            }
+        /* Mobile Bottom Navigation */
+        .mobile-bottom-nav {
+            position: fixed;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 92%;
+            max-width: 400px;
+            background: rgba(12, 12, 18, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 12px 15px;
+            z-index: 1050;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+        }
 
-            .navbar-nav .nav-item > .nav-link:hover::after {
-                transform: scaleX(1);
-            }
+        .mobile-bottom-nav .bottom-nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.7rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
 
-            .navbar-toggler {
-                border: none !important;
-                outline: none !important;
-                color: #ffffff;
-                padding: 5px 10px;
-                font-size: 1.5rem;
-                background: rgba(255,255,255,0.05);
-                border-radius: 8px;
-                transition: all 0.3s ease;
-            }
+        .mobile-bottom-nav .bottom-nav-item i {
+            font-size: 1.4rem;
+            margin-bottom: 4px;
+            transition: transform 0.3s ease;
+        }
 
-            .navbar-toggler:hover {
-                background: rgba(255,255,255,0.1);
-            }
+        .mobile-bottom-nav .bottom-nav-item:hover,
+        .mobile-bottom-nav .bottom-nav-item.active {
+            color: var(--primary-color);
+        }
 
-            .navbar-toggler:focus {
-                box-shadow: 0 0 0 3px rgba(0, 240, 255, 0.3);
-            }
+        .mobile-bottom-nav .bottom-nav-item:hover i {
+            transform: translateY(-3px);
+        }
 
-            @media (max-width: 991px) {
-                #header .navbar {
-                    padding: 12px 0;
-                }
-                #header .navbar-toggler,
-                #header .navbar-collapse {
-                    display: none !important;
-                }
-                body {
-                    padding-bottom: 90px !important;
-                }
-            }
+        .mobile-bottom-nav .center-btn {
+            position: relative;
+            top: -25px;
+        }
 
-            /* Mobile Bottom Navigation */
-            .mobile-bottom-nav {
-                position: fixed;
-                bottom: 15px;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 92%;
-                max-width: 400px;
-                background: rgba(12, 12, 18, 0.95);
-                backdrop-filter: blur(20px);
-                -webkit-backdrop-filter: blur(20px);
-                border: 1px solid rgba(255, 255, 255, 0.08);
-                border-radius: 20px;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                padding: 12px 15px;
-                z-index: 1050;
-                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
-            }
+        .mobile-bottom-nav .center-btn .inner-btn {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff !important;
+            font-size: 1.8rem;
+            box-shadow: 0 10px 20px rgba(112, 0, 255, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-            .mobile-bottom-nav .bottom-nav-item {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                color: var(--text-muted);
-                text-decoration: none;
-                font-size: 0.7rem;
-                font-weight: 500;
-                transition: all 0.3s ease;
-            }
+        .mobile-bottom-nav .center-btn .inner-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 30px rgba(0, 240, 255, 0.6);
+        }
 
-            .mobile-bottom-nav .bottom-nav-item i {
-                font-size: 1.4rem;
-                margin-bottom: 4px;
-                transition: transform 0.3s ease;
-            }
+        /* Vibrant Buttons */
+        .btn.primary-button,
+        .btn.dark-button {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)) !important;
+            border: none !important;
+            color: #fff !important;
+            border-radius: 8px !important;
+            padding: 12px 28px !important;
+            font-weight: 600 !important;
+            letter-spacing: 0.5px !important;
+            box-shadow: 0 4px 15px rgba(112, 0, 255, 0.4) !important;
+            transition: all 0.3s ease !important;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
 
-            .mobile-bottom-nav .bottom-nav-item:hover, 
-            .mobile-bottom-nav .bottom-nav-item.active {
-                color: var(--primary-color);
-            }
+        .btn.primary-button:hover,
+        .btn.dark-button:hover {
+            transform: translateY(-2px) !important;
+            box-shadow: 0 8px 25px rgba(0, 240, 255, 0.6) !important;
+            color: #fff !important;
+        }
 
-            .mobile-bottom-nav .bottom-nav-item:hover i {
-                transform: translateY(-3px);
-            }
+        /* Premium Card Design with Hover Effects */
+        .card {
+            background: var(--bg-dark-surface) !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            border-radius: 16px !important;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease !important;
+            padding: 30px 20px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+        }
 
-            .mobile-bottom-nav .center-btn {
-                position: relative;
-                top: -25px;
-            }
+        .card:hover {
+            transform: translateY(-8px) scale(1.02);
+            border-color: rgba(0, 240, 255, 0.4) !important;
+            box-shadow: 0 15px 40px rgba(112, 0, 255, 0.2) !important;
+        }
 
-            .mobile-bottom-nav .center-btn .inner-btn {
-                width: 60px;
-                height: 60px;
-                background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: #fff !important;
-                font-size: 1.8rem;
-                box-shadow: 0 10px 20px rgba(112, 0, 255, 0.4);
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-            }
+        .card i.icon {
+            color: var(--primary-color) !important;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
 
-            .mobile-bottom-nav .center-btn .inner-btn:hover {
-                transform: scale(1.1);
-                box-shadow: 0 15px 30px rgba(0, 240, 255, 0.6);
-            }
+        .card:hover i.icon {
+            transform: scale(1.1);
+        }
 
-            /* Vibrant Buttons */
-            .btn.primary-button, .btn.dark-button {
-                background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)) !important;
-                border: none !important;
-                color: #fff !important;
-                border-radius: 8px !important;
-                padding: 12px 28px !important;
-                font-weight: 600 !important;
-                letter-spacing: 0.5px !important;
-                box-shadow: 0 4px 15px rgba(112, 0, 255, 0.4) !important;
-                transition: all 0.3s ease !important;
-                position: relative;
-                overflow: hidden;
-                z-index: 1;
-            }
-            .btn.primary-button:hover, .btn.dark-button:hover {
-                transform: translateY(-2px) !important;
-                box-shadow: 0 8px 25px rgba(0, 240, 255, 0.6) !important;
-                color: #fff !important;
-            }
+        .card h4 {
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
 
-            /* Premium Card Design with Hover Effects */
-            .card {
-                background: var(--bg-dark-surface) !important;
-                border: 1px solid rgba(255, 255, 255, 0.08) !important;
-                border-radius: 16px !important;
-                backdrop-filter: blur(12px);
-                -webkit-backdrop-filter: blur(12px);
-                transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease !important;
-                padding: 30px 20px;
-                position: relative;
-                overflow: hidden;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
-            }
+        .card p {
+            color: var(--text-muted);
+        }
 
-            .card:hover {
-                transform: translateY(-8px) scale(1.02);
-                border-color: rgba(0, 240, 255, 0.4) !important;
-                box-shadow: 0 15px 40px rgba(112, 0, 255, 0.2) !important;
-            }
+        /* Image Gallery Wrappers inside Cards */
+        .card .gallery {
+            border-radius: 12px;
+            overflow: hidden;
+            margin-top: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-            .card i.icon {
-                color: var(--primary-color) !important;
-                font-size: 3rem;
-                margin-bottom: 20px;
-                display: inline-block;
-                transition: transform 0.3s ease;
-            }
+        .card .gallery img {
+            transition: transform 0.5s ease;
+            width: 100%;
+        }
 
-            .card:hover i.icon {
-                transform: scale(1.1);
-            }
+        .card .gallery:hover img {
+            transform: scale(1.05);
+        }
 
-            .card h4 {
-                margin-bottom: 15px;
-                color: #ffffff;
-            }
+        /* Price Tags */
+        .card .price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin: 20px 0;
+            display: block;
+        }
 
-            .card p {
-                color: var(--text-muted);
-            }
+        .card .price i {
+            font-size: 1rem;
+            color: var(--text-muted);
+            vertical-align: super;
+            margin-left: 5px;
+            font-style: normal;
+        }
 
-            /* Image Gallery Wrappers inside Cards */
-            .card .gallery {
-                border-radius: 12px;
-                overflow: hidden;
-                margin-top: 15px;
-                border: 1px solid rgba(255, 255, 255, 0.1);
-            }
-            .card .gallery img {
-                transition: transform 0.5s ease;
-                width: 100%;
-            }
-            .card .gallery:hover img {
-                transform: scale(1.05);
-            }
+        /* List Groups in Pricing Cards */
+        .list-group-item {
+            background: transparent !important;
+            border-color: rgba(255, 255, 255, 0.05) !important;
+            color: var(--text-muted) !important;
+        }
 
-            /* Price Tags */
-            .card .price {
-                font-size: 2.5rem;
-                font-weight: 800;
-                color: var(--primary-color);
-                margin: 20px 0;
-                display: block;
-            }
-            .card .price i {
-                font-size: 1rem;
-                color: var(--text-muted);
-                vertical-align: super;
-                margin-left: 5px;
-                font-style: normal;
-            }
+        .list-group-item i.icon-check {
+            color: #00ff88 !important;
+        }
 
-            /* List Groups in Pricing Cards */
-            .list-group-item {
-                background: transparent !important;
-                border-color: rgba(255, 255, 255, 0.05) !important;
-                color: var(--text-muted) !important;
-            }
-            .list-group-item i.icon-check {
-                color: #00ff88 !important;
-            }
+        /* Animations and Glows */
+        .hero-image {
+            filter: drop-shadow(0 0 30px rgba(112, 0, 255, 0.3));
+            transition: filter 0.3s ease;
+        }
 
-            /* Animations and Glows */
-            .hero-image {
-                filter: drop-shadow(0 0 30px rgba(112, 0, 255, 0.3));
-                transition: filter 0.3s ease;
-            }
-            .hero-image:hover {
-                filter: drop-shadow(0 0 45px rgba(0, 240, 255, 0.5));
-            }
+        .hero-image:hover {
+            filter: drop-shadow(0 0 45px rgba(0, 240, 255, 0.5));
+        }
 
-            /* Fix Section padding */
-            section {
-                padding-top: 5rem !important;
-                padding-bottom: 5rem !important;
-                background-color: transparent;
-            }
-            section.hero {
-                padding-top: 8rem !important;
-            }
-            
-            section.odd {
-                background-color: var(--bg-dark-base) !important;
-            }
-            section.secondary {
-                background-color: rgba(12, 12, 18, 0.95) !important;
-            }
-        </style>
-        
-    </head>
+        /* Fix Section padding */
+        section {
+            padding-top: 5rem !important;
+            padding-bottom: 5rem !important;
+            background-color: transparent;
+        }
 
-    <body class="home theme-mode-dark">
+        section.hero {
+            padding-top: 8rem !important;
+        }
 
-        <!-- Header -->
-        <header id="header">
+        section.odd {
+            background-color: var(--bg-dark-base) !important;
+        }
 
-            <!-- Navbar -->
-            <nav data-aos="zoom-in" data-aos-delay="400" class="navbar navbar-expand-lg">
-                <div class="container header">
+        section.secondary {
+            background-color: rgba(12, 12, 18, 0.95) !important;
+        }
+    </style>
 
-                    <!-- Navbar Brand-->
-                    <a class="navbar-brand" href="/">
-                        F99Reborn <span class="version-number">v1.1.0</span>
-                    </a>
+</head>
 
-                    <!-- Mobile Toggle Button -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="icon-menu"></i>
-                    </button>
+<body class="home theme-mode-dark">
 
-                    <!-- Navbar Collapse -->
-                    <div class="collapse navbar-collapse" id="navbarContent">
-                        <!-- Nav holder -->
-                        <div class="ml-auto"></div>
+    <!-- Header -->
+    <header id="header">
 
-                        <!-- Navbar Items -->
-                        <ul class="navbar-nav items align-items-lg-center">
-                            <li class="nav-item">
-                                <a href="/" class="nav-link smooth-anchor">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#features" class="nav-link smooth-anchor">Feature</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#portfolio" class="nav-link smooth-anchor">Screens</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#downloads" class="nav-link smooth-anchor">Downloads</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#buylicense" class="nav-link smooth-anchor">Buy License</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link smooth-anchor">Exchange (Coming Soon)</a>
-                            </li>
-                            <li class="nav-item d-flex auth-actions ml-lg-4 mt-3 mt-lg-0">
-                                <a href="https://members.fantastic99reborn.web.id/members/login" target="_blank" class="btn dark-button mr-lg-3" style="padding: 10px 24px !important;">Login</a>
-                                <a href="https://members.fantastic99reborn.web.id/members/register" target="_blank" class="btn primary-button" style="padding: 10px 24px !important;">Register</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+        <!-- Navbar -->
+        <nav data-aos="zoom-in" data-aos-delay="400" class="navbar navbar-expand-lg">
+            <div class="container header">
 
-        </header>
-
-        <!-- Mobile Bottom Navigation -->
-        <div class="mobile-bottom-nav d-lg-none">
-            <a href="/" class="bottom-nav-item active smooth-anchor">
-                <i class="icon-home"></i>
-                <span>Home</span>
-            </a>
-            <a href="#buylicense" class="bottom-nav-item smooth-anchor">
-                <i class="icon-handbag"></i>
-                <span>Buy</span>
-            </a>
-            <div class="bottom-nav-item center-btn">
-                <a href="#downloads" class="inner-btn smooth-anchor">
-                    <i class="icon-rocket"></i>
+                <!-- Navbar Brand-->
+                <a class="navbar-brand" href="/">
+                    F99Reborn <span class="version-number">v1.1.0</span>
                 </a>
+
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="icon-menu"></i>
+                </button>
+
+                <!-- Navbar Collapse -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <!-- Nav holder -->
+                    <div class="ml-auto"></div>
+
+                    <!-- Navbar Items -->
+                    <ul class="navbar-nav items align-items-lg-center">
+                        <li class="nav-item">
+                            <a href="/" class="nav-link smooth-anchor">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#features" class="nav-link smooth-anchor">Feature</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link smooth-anchor">Screens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#downloads" class="nav-link smooth-anchor">Downloads</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#buylicense" class="nav-link smooth-anchor">Buy License</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link smooth-anchor">Exchange (Coming Soon)</a>
+                        </li>
+                        <li class="nav-item d-flex auth-actions ml-lg-4 mt-3 mt-lg-0">
+                            <a href="https://members.fantastic99reborn.web.id/members/login" target="_blank"
+                                class="btn dark-button mr-lg-3" style="padding: 10px 24px !important;">Login</a>
+                            <a href="https://members.fantastic99reborn.web.id/members/register" target="_blank"
+                                class="btn primary-button" style="padding: 10px 24px !important;">Register</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <a href="https://members.fantastic99reborn.web.id/members/login" target="_blank" class="bottom-nav-item">
-                <i class="icon-login"></i>
-                <span>Login</span>
-            </a>
-            <a href="https://members.fantastic99reborn.web.id/members/register" target="_blank" class="bottom-nav-item">
-                <i class="icon-user"></i>
-                <span>Register</span>
+        </nav>
+
+    </header>
+
+    <!-- Mobile Bottom Navigation -->
+    <div class="mobile-bottom-nav d-lg-none">
+        <a href="/" class="bottom-nav-item active smooth-anchor">
+            <i class="icon-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#buylicense" class="bottom-nav-item smooth-anchor">
+            <i class="icon-handbag"></i>
+            <span>Buy</span>
+        </a>
+        <div class="bottom-nav-item center-btn">
+            <a href="#downloads" class="inner-btn smooth-anchor">
+                <i class="icon-rocket"></i>
             </a>
         </div>
+        <a href="https://members.fantastic99reborn.web.id/members/login" target="_blank" class="bottom-nav-item">
+            <i class="icon-login"></i>
+            <span>Login</span>
+        </a>
+        <a href="https://members.fantastic99reborn.web.id/members/register" target="_blank" class="bottom-nav-item">
+            <i class="icon-user"></i>
+            <span>Register</span>
+        </a>
+    </div>
 
-        <!-- Hero -->
-        <section id="slider" class="hero p-0 odd featured all">
-            <div id="particles-hero" class="swiper-container no-slider animation slider-h-100 particles" data-particle="space">
-                <div class="swiper-wrapper">
+    <!-- Hero -->
+    <section id="slider" class="hero p-0 odd featured all">
+        <div id="particles-hero" class="swiper-container no-slider animation slider-h-100 particles"
+            data-particle="space">
+            <div class="swiper-wrapper">
 
-                    <!-- Item 1 -->
-                    <div class="swiper-slide slide-center">
-                        <img data-aos="zoom-out-up" data-aos-delay="800" src="assets/images/logo/bg_hero.png" class="hero-image" alt="Hero Image" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.5">
-                        <div class="slide-content row" data-mask-768="50">
-                            <div class="col-12 d-flex inner">
-                                <div class="left align-self-center text-center text-md-left">
-                                    <h1 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">WE ARE THE F99REBORN BOT.</h1>
-                                    <p data-aos="zoom-out-up" data-aos-delay="800" class="description">Escape the fad and discover our creative services that will change your financial growth even faster. Fast Trade and Fast Profit.</p>
-                                    <p data-aos="zoom-out-up" data-aos-delay="800" class="description"><i>*F99Reborn is just a robot. while the broker can change at any time according to the management and developer team</i></p>
-                                    <a href="#downloads" data-aos="zoom-out-up" data-aos-delay="1200" class="smooth-anchor ml-auto mr-auto ml-md-0 mt-4 btn dark-button"><i class="icon-cup"></i>Downloads Now</a>
+                <!-- Item 1 -->
+                <div class="swiper-slide slide-center">
+                    <img data-aos="zoom-out-up" data-aos-delay="800" src="assets/images/logo/bg_hero.png"
+                        class="hero-image" alt="Hero Image" data-tilt data-tilt-max="15" data-tilt-speed="400"
+                        data-tilt-glare="true" data-tilt-max-glare="0.5">
+                    <div class="slide-content row" data-mask-768="50">
+                        <div class="col-12 d-flex inner">
+                            <div class="left align-self-center text-center text-md-left">
+                                <h1 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">WE ARE
+                                    THE F99REBORN BOT.</h1>
+                                <p data-aos="zoom-out-up" data-aos-delay="800" class="description">Escape the fad and
+                                    discover our creative services that will change your financial growth even faster.
+                                    Fast Trade and Fast Profit.</p>
+                                <p data-aos="zoom-out-up" data-aos-delay="800" class="description"><i>*F99Reborn is just
+                                        a robot. while the broker can change at any time according to the management and
+                                        developer team</i></p>
+                                <a href="#downloads" data-aos="zoom-out-up" data-aos-delay="1200"
+                                    class="smooth-anchor ml-auto mr-auto ml-md-0 mt-4 btn dark-button"><i
+                                        class="icon-cup"></i>Downloads Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section-1 odd offers featured all">
+        <div class="container">
+            <div class="row justify-content-center text-center items">
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card no-hover">
+                        <i class="icon icon-globe"></i>
+                        <h4>Multi Trade</h4>
+                        <p>make a maximum of 20.000 transactions in just 1 click</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card no-hover">
+                        <i class="icon icon-screen-smartphone"></i>
+                        <h4>Mobile Responsibilities</h4>
+                        <p>With the Stable Application you can trade safely and comfortably</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card no-hover">
+                        <i class="icon icon-chart"></i>
+                        <h4>Fast Profit</h4>
+                        <p>by doing multi trading you can quickly get a profit, with creative settings that we will
+                            guide through our trading group.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card no-hover">
+                        <i class="icon icon-bulb"></i>
+                        <h4>Brand Creation</h4>
+                        <p>we always update creatively to simplify and develop our robot services so that users can
+                            trade comfortably.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio2" class="section-2 odd offers secondary featured all">
+        <div class="container">
+            <div class="row text-center intro">
+                <div class="col-12">
+                    <h2>Our Screenshot of the application Single Trade</h2>
+                    <p class="text-max-800">We have already built amazing things for our members.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center items">
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card featured">
+                        <h4>Trade Page</h4>
+                        <div class="gallery">
+                            <a href="assets/images/screens/5.jpeg">
+                                <img src="assets/images/screens/5.jpeg" alt="Trade Page">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card">
+                        <h4>Setting Page</h4>
+                        <div class="gallery">
+                            <a href="assets/images/screens/6.jpeg">
+                                <img src="assets/images/screens/6.jpeg" alt="Setting Page">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card featured">
+                        <h4>Statistic Page</h4>
+                        <div class="gallery">
+                            <a href="assets/images/screens/7.jpeg">
+                                <img src="assets/images/screens/7.jpeg" alt="Statistic Page">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card featured">
+                        <h4>Account Page</h4>
+                        <div class="gallery">
+                            <a href="assets/images/screens/8.jpeg">
+                                <img src="assets/images/screens/8.jpeg" alt="Account Page">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portfolio2" class="section-2 odd offers secondary featured all">
+        <div class="container">
+            <div class="row text-center intro">
+                <div class="col-12">
+                    <h2>Our Screenshot of the application Multi Trade (WOLF BROKER)</h2>
+                    <p class="text-max-800">We have already built amazing things for our members.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center items">
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card featured">
+                        <h4>Trade Page</h4>
+                        <div class="gallery">
+                            <a href="assets/images/screens/wolfmulti/1.jpeg">
+                                <img src="assets/images/screens/wolfmulti/1.jpeg" alt="Trade Page">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card">
+                        <h4>Setting Page</h4>
+                        <div class="gallery">
+                            <a href="assets/images/screens/wolfmulti/2.jpeg">
+                                <img src="assets/images/screens/wolfmulti/2.jpeg" alt="Setting Page">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card featured">
+                        <h4>Statistic Page</h4>
+                        <div class="gallery">
+                            <a href="assets/images/screens/wolfmulti/3.jpeg">
+                                <img src="assets/images/screens/wolfmulti/3.jpeg" alt="Statistic Page">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card featured">
+                        <h4>Account Page</h4>
+                        <div class="gallery">
+                            <a href="assets/images/screens/wolfmulti/4.jpeg">
+                                <img src="assets/images/screens/wolfmulti/4.jpeg" alt="Account Page">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portfolio2" class="section-2 odd offers secondary featured all">
+        <div class="container">
+            <div class="row text-center intro">
+                <div class="col-12">
+                    <h2>Our Screenshot of the application Single Trade (WOLF BROKER)</h2>
+                    <p class="text-max-800">We have already built amazing things for our members.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center items">
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card featured">
+                        <h4>Trade Page</h4>
+                        <div class="gallery">
+                            <a href="assets/images/screens/wolfsingle/1.jpeg">
+                                <img src="assets/images/screens/wolfsingle/1.jpeg" alt="Trade Page">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card">
+                        <h4>Setting Page</h4>
+                        <div class="gallery">
+                            <a href="assets/images/screens/wolfsingle/2.jpeg">
+                                <img src="assets/images/screens/wolfsingle/2.jpeg" alt="Setting Page">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card featured">
+                        <h4>Statistic Page</h4>
+                        <div class="gallery">
+                            <a href="assets/images/screens/wolfsingle/3.jpeg">
+                                <img src="assets/images/screens/wolfsingle/3.jpeg" alt="Statistic Page">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card featured">
+                        <h4>Account Page</h4>
+                        <div class="gallery">
+                            <a href="assets/images/screens/wolfsingle/4.jpeg">
+                                <img src="assets/images/screens/wolfsingle/4.jpeg" alt="Account Page">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio2" class="section-2 odd offers secondary featured all">
+        <div class="container">
+            <div class="row text-center intro">
+                <div class="col-12">
+                    <h2>Our Screenshot of the application Single Trade (STAKE BROKER)</h2>
+                    <p class="text-max-800">We have already built amazing things for our members.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center items">
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card featured">
+                        <h4>Trade Page</h4>
+                        <div class="gallery">
+                            <a href="assets/images/screens/stake/1.jpeg">
+                                <img src="assets/images/screens/stake/1.jpeg" alt="Trade Page">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card">
+                        <h4>Setting Page</h4>
+                        <div class="gallery">
+                            <a href="assets/images/screens/stake/2.jpeg">
+                                <img src="assets/images/screens/stake/2.jpeg" alt="Setting Page">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card featured">
+                        <h4>Statistic Page</h4>
+                        <div class="gallery">
+                            <a href="assets/images/screens/stake/3.jpeg">
+                                <img src="assets/images/screens/stake/3.jpeg" alt="Statistic Page">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card featured">
+                        <h4>Account Page</h4>
+                        <div class="gallery">
+                            <a href="assets/images/screens/stake/4.jpeg">
+                                <img src="assets/images/screens/stake/4.jpeg" alt="Account Page">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get -->
+    <section id="downloads" class="section-3 hero odd p-0 featured all">
+        <div class="swiper-container no-slider animation slider-h-200">
+            <div class="swiper-wrapper">
+                <!-- Item 1 -->
+                <div class="swiper-slide slide-center">
+                    <div class="slide-content row">
+                        <div class="col-12 d-flex inner">
+                            <div class="center align-self-center text-center">
+                                <h2 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">ARE YOU
+                                    READY?</h2>
+                                <p data-aos="zoom-out-up" data-aos-delay="800" class="description ml-auto mr-auto">We
+                                    are driven by creativity. We create innovative things to help you fast profit with
+                                    fast trade. Download our applications below.</p>
+                                <div class="d-flex flex-column align-items-center mt-5" data-aos="zoom-out-up"
+                                    data-aos-delay="1200">
+                                    <a href="apks/F99StakeBot1.0.apk" download
+                                        class="mb-4 btn primary-button d-flex align-items-center justify-content-center"
+                                        style="width: 100%; max-width: 350px; padding: 18px 30px !important; font-size: 1.2rem !important;">
+                                        <i class="icon-cloud-download mr-3" style="font-size: 1.8rem;"></i>
+                                        <span>Download Stake Bot APK</span>
+                                    </a>
+                                    <a href="apks/F99WolfSingleBot1.0.apk" download
+                                        class="mb-4 btn dark-button d-flex align-items-center justify-content-center"
+                                        style="width: 100%; max-width: 350px; padding: 18px 30px !important; font-size: 1.2rem !important;">
+                                        <i class="icon-cloud-download mr-3" style="font-size: 1.8rem;"></i>
+                                        <span>Download Wolf Bot APK</span>
+                                    </a>
+                                    <a href="apks/F99SingleTradeV1.0.apk" download
+                                        class="btn primary-button d-flex align-items-center justify-content-center"
+                                        style="width: 100%; max-width: 350px; padding: 18px 30px !important; font-size: 1.2rem !important;">
+                                        <i class="icon-cloud-download mr-3" style="font-size: 1.8rem;"></i>
+                                        <span>Download F99 Single Trade</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
-
-        <!-- Features -->
-        <section id="features" class="section-1 odd offers featured all">
-            <div class="container">
-                <div class="row justify-content-center text-center items">
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card no-hover">
-                            <i class="icon icon-globe"></i>
-                            <h4>Multi Trade</h4>
-                            <p>make a maximum of 20.000 transactions in just 1 click</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card no-hover">
-                            <i class="icon icon-screen-smartphone"></i>
-                            <h4>Mobile Responsibilities</h4>
-                            <p>With the Stable Application you can trade safely and comfortably</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card no-hover">
-                            <i class="icon icon-chart"></i>
-                            <h4>Fast Profit</h4>
-                            <p>by doing multi trading you can quickly get a profit, with creative settings that we will guide through our trading group.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card no-hover">
-                            <i class="icon icon-bulb"></i>
-                            <h4>Brand Creation</h4>
-                            <p>we always update creatively to simplify and develop our robot services so that users can trade comfortably.</p>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </section>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
 
-        <section id="portfolio2" class="section-2 odd offers secondary featured all">
-            <div class="container">
-                <div class="row text-center intro">
-                    <div class="col-12">
-                        <h2>Our Screenshot of the application Single Trade</h2>
-                        <p class="text-max-800">We have already built amazing things for our members.</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center text-center items">
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Trade Page</h4>
-                            <div class="gallery">
-                                <a href="assets/images/screens/5.jpeg">
-                                    <img src="assets/images/screens/5.jpeg" alt="Trade Page">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card">
-                            <h4>Setting Page</h4>
-                            <div class="gallery">
-                                <a href="assets/images/screens/6.jpeg">
-                                    <img src="assets/images/screens/6.jpeg" alt="Setting Page">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Statistic Page</h4>
-                            <div class="gallery">
-                                <a href="assets/images/screens/7.jpeg">
-                                    <img src="assets/images/screens/7.jpeg" alt="Statistic Page">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Account Page</h4>
-                            <div class="gallery">
-                                <a href="assets/images/screens/8.jpeg">
-                                    <img src="assets/images/screens/8.jpeg" alt="Account Page">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="portfolio2" class="section-2 odd offers secondary featured all">
-            <div class="container">
-                <div class="row text-center intro">
-                    <div class="col-12">
-                        <h2>Our Screenshot of the application Multi Trade (WOLF BROKER)</h2>
-                        <p class="text-max-800">We have already built amazing things for our members.</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center text-center items">
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Trade Page</h4>
-                            <div class="gallery">
-                                <a href="assets/images/screens/wolfmulti/1.jpeg">
-                                    <img src="assets/images/screens/wolfmulti/1.jpeg" alt="Trade Page">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card">
-                            <h4>Setting Page</h4>
-                            <div class="gallery">
-                                <a href="assets/images/screens/wolfmulti/2.jpeg">
-                                    <img src="assets/images/screens/wolfmulti/2.jpeg" alt="Setting Page">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Statistic Page</h4>
-                            <div class="gallery">
-                                <a href="assets/images/screens/wolfmulti/3.jpeg">
-                                    <img src="assets/images/screens/wolfmulti/3.jpeg" alt="Statistic Page">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Account Page</h4>
-                            <div class="gallery">
-                                <a href="assets/images/screens/wolfmulti/4.jpeg">
-                                    <img src="assets/images/screens/wolfmulti/4.jpeg" alt="Account Page">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="portfolio2" class="section-2 odd offers secondary featured all">
-            <div class="container">
-                <div class="row text-center intro">
-                    <div class="col-12">
-                        <h2>Our Screenshot of the application Single Trade (WOLF BROKER)</h2>
-                        <p class="text-max-800">We have already built amazing things for our members.</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center text-center items">
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Trade Page</h4>
-                            <div class="gallery">
-                                <a href="assets/images/screens/wolfsingle/1.jpeg">
-                                    <img src="assets/images/screens/wolfsingle/1.jpeg" alt="Trade Page">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card">
-                            <h4>Setting Page</h4>
-                            <div class="gallery">
-                                <a href="assets/images/screens/wolfsingle/2.jpeg">
-                                    <img src="assets/images/screens/wolfsingle/2.jpeg" alt="Setting Page">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Statistic Page</h4>
-                            <div class="gallery">
-                                <a href="assets/images/screens/wolfsingle/3.jpeg">
-                                    <img src="assets/images/screens/wolfsingle/3.jpeg" alt="Statistic Page">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Account Page</h4>
-                            <div class="gallery">
-                                <a href="assets/images/screens/wolfsingle/4.jpeg">
-                                    <img src="assets/images/screens/wolfsingle/4.jpeg" alt="Account Page">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="portfolio2" class="section-2 odd offers secondary featured all">
-            <div class="container">
-                <div class="row text-center intro">
-                    <div class="col-12">
-                        <h2>Our Screenshot of the application Single Trade (STAKE BROKER)</h2>
-                        <p class="text-max-800">We have already built amazing things for our members.</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center text-center items">
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Trade Page</h4>
-                            <div class="gallery">
-                                <a href="assets/images/screens/stake/1.jpeg">
-                                    <img src="assets/images/screens/stake/1.jpeg" alt="Trade Page">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card">
-                            <h4>Setting Page</h4>
-                            <div class="gallery">
-                                <a href="assets/images/screens/stake/2.jpeg">
-                                    <img src="assets/images/screens/stake/2.jpeg" alt="Setting Page">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Statistic Page</h4>
-                            <div class="gallery">
-                                <a href="assets/images/screens/stake/3.jpeg">
-                                    <img src="assets/images/screens/stake/3.jpeg" alt="Statistic Page">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Account Page</h4>
-                            <div class="gallery">
-                                <a href="assets/images/screens/stake/4.jpeg">
-                                    <img src="assets/images/screens/stake/4.jpeg" alt="Account Page">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Get -->
-        <section id="downloads" class="section-3 hero odd p-0 featured all">
-            <div class="swiper-container no-slider animation slider-h-200">
-                <div class="swiper-wrapper">
-                    <!-- Item 1 -->
-                    <div class="swiper-slide slide-center">
-                        <div class="slide-content row">
-                            <div class="col-12 d-flex inner">
-                                <div class="center align-self-center text-center">
-                                    <h2 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">ARE YOU READY?</h2>
-                                    <p data-aos="zoom-out-up" data-aos-delay="800" class="description ml-auto mr-auto">We are driven by creativity. We create innovative things to help you fast profit with fast trade. Download our applications below.</p>
-                                    <div class="d-flex flex-column align-items-center mt-5" data-aos="zoom-out-up" data-aos-delay="1200">
-                                        <a href="apks/F99StakeBot1.0.apk" download class="mb-4 btn primary-button d-flex align-items-center justify-content-center" style="width: 100%; max-width: 350px; padding: 18px 30px !important; font-size: 1.2rem !important;">
-                                            <i class="icon-cloud-download mr-3" style="font-size: 1.8rem;"></i>
-                                            <span>Download Stake Bot APK</span>
-                                        </a>
-                                        <a href="apks/F99WolfSingleBot1.0.apk" download class="mb-4 btn dark-button d-flex align-items-center justify-content-center" style="width: 100%; max-width: 350px; padding: 18px 30px !important; font-size: 1.2rem !important;">
-                                            <i class="icon-cloud-download mr-3" style="font-size: 1.8rem;"></i>
-                                            <span>Download Wolf Bot APK</span>
-                                        </a>
-                                        <a href="#" download class="btn primary-button d-flex align-items-center justify-content-center" style="width: 100%; max-width: 350px; padding: 18px 30px !important; font-size: 1.2rem !important;">
-                                            <i class="icon-cloud-download mr-3" style="font-size: 1.8rem;"></i>
-                                            <span>Download F99 Single Trade</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
-
-        <!-- <section id="buylicense" class="section-3 hero odd p-0 featured all">
+    <!-- <section id="buylicense" class="section-3 hero odd p-0 featured all">
             <div class="swiper-container no-slider animation slider-h-100">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide-center">
@@ -832,329 +880,341 @@
             </div>
         </section> -->
 
-        <section id="buylicense" class="section-4 plans featured left">
+    <section id="buylicense" class="section-4 plans featured left">
+        <div class="container">
+
+            <!-- Stake -->
+            <div class="row text-center intro">
+                <div class="col-12">
+                    <h2 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">BUY STAKE BOT
+                        LICENSE WITH PREMIUM SERVICE</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center items">
+                <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
+                    <div class="card">
+                        <i class="icon icon-handbag"></i>
+                        <h4>7 Days</h4>
+                        <span class="price">75<i>IDR</i></span>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                <span>7 Days Active License</span>
+                                <i class="icon-min m-0 icon-check text-right"></i>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                <span>Premium Stake Bot Access</span>
+                                <i class="icon-min m-0 icon-check text-right"></i>
+                            </li>
+                        </ul>
+                        <a href="https://members.fantastic99reborn.web.id/members/checkout/1" target="_blank"
+                            class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
+                    <div class="card">
+                        <i class="icon icon-fire"></i>
+                        <h4>1 Month</h4>
+                        <span class="price">250<i>IDR</i></span>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                <span>1 Month Active License</span>
+                                <i class="icon-min m-0 icon-check text-right"></i>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                <span>Premium Stake Bot Access</span>
+                                <i class="icon-min m-0 icon-check text-right"></i>
+                            </li>
+                        </ul>
+                        <a href="https://members.fantastic99reborn.web.id/members/checkout/2" target="_blank"
+                            class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
+                    <div class="card">
+                        <i class="icon icon-diamond"></i>
+                        <h4>1 Years</h4>
+                        <span class="price">2.500<i>IDR</i></span>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                <span>1 Year Active License</span>
+                                <i class="icon-min m-0 icon-check text-right"></i>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                <span>Premium Stake Bot Access</span>
+                                <i class="icon-min m-0 icon-check text-right"></i>
+                            </li>
+                        </ul>
+                        <a href="https://members.fantastic99reborn.web.id/members/checkout/3" target="_blank"
+                            class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stake -->
+            <div class="row text-center intro">
+                <div class="col-12">
+                    <h2 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">BUY WOLF BOT
+                        LICENSE WITH PREMIUM SERVICE</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center items">
+                <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
+                    <div class="card">
+                        <i class="icon icon-handbag"></i>
+                        <h4>7 Days</h4>
+                        <span class="price">75<i>IDR</i></span>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                <span>7 Days Active License</span>
+                                <i class="icon-min m-0 icon-check text-right"></i>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                <span>Premium Wolf Bot Access</span>
+                                <i class="icon-min m-0 icon-check text-right"></i>
+                            </li>
+                        </ul>
+                        <a href="https://members.fantastic99reborn.web.id/members/checkout/4" target="_blank"
+                            class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
+                    <div class="card">
+                        <i class="icon icon-fire"></i>
+                        <h4>1 Month</h4>
+                        <span class="price">250<i>IDR</i></span>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                <span>1 Month Active License</span>
+                                <i class="icon-min m-0 icon-check text-right"></i>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                <span>Premium Wolf Bot Access</span>
+                                <i class="icon-min m-0 icon-check text-right"></i>
+                            </li>
+                        </ul>
+                        <a href="https://members.fantastic99reborn.web.id/members/checkout/5" target="_blank"
+                            class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
+                    <div class="card">
+                        <i class="icon icon-diamond"></i>
+                        <h4>1 Years</h4>
+                        <span class="price">2.500<i>IDR</i></span>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                <span>1 Year Active License</span>
+                                <i class="icon-min m-0 icon-check text-right"></i>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center text-left">
+                                <span>Premium Wolf Bot Access</span>
+                                <i class="icon-min m-0 icon-check text-right"></i>
+                            </li>
+                        </ul>
+                        <a href="https://members.fantastic99reborn.web.id/members/checkout/6" target="_blank"
+                            class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="odd">
+
+        <!-- Copyright -->
+        <section id="copyright" class="p-3 copyright">
             <div class="container">
-
-                <!-- Stake -->
-                <div class="row text-center intro">
-                    <div class="col-12">
-                        <h2 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">BUY STAKE BOT LICENSE WITH PREMIUM SERVICE</h2>
+                <div class="row">
+                    <div class="col-12 col-md-6 p-3 text-center text-lg-left">
+                        <p>Enjoy the free price. We are tracking any intention of privacy.</p>
+                        <!--
+                                Suggestion: Replace the text above with a description of your website.
+                             -->
                     </div>
-                </div>
-                <div class="row justify-content-center text-center items">
-                    <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
-                        <div class="card">
-                            <i class="icon icon-handbag"></i>
-                            <h4>7 Days</h4>
-                            <span class="price">75<i>IDR</i></span>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
-                                    <span>7 Days Active License</span>
-                                    <i class="icon-min m-0 icon-check text-right"></i>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
-                                    <span>Premium Stake Bot Access</span>
-                                    <i class="icon-min m-0 icon-check text-right"></i>
-                                </li>
-                            </ul>
-                            <a href="https://members.fantastic99reborn.web.id/members/checkout/1" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
-                        <div class="card">
-                            <i class="icon icon-fire"></i>
-                            <h4>1 Month</h4>
-                            <span class="price">250<i>IDR</i></span>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
-                                    <span>1 Month Active License</span>
-                                    <i class="icon-min m-0 icon-check text-right"></i>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
-                                    <span>Premium Stake Bot Access</span>
-                                    <i class="icon-min m-0 icon-check text-right"></i>
-                                </li>
-                            </ul>
-                            <a href="https://members.fantastic99reborn.web.id/members/checkout/2" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
-                        <div class="card">
-                            <i class="icon icon-diamond"></i>
-                            <h4>1 Years</h4>
-                            <span class="price">2.500<i>IDR</i></span>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
-                                    <span>1 Year Active License</span>
-                                    <i class="icon-min m-0 icon-check text-right"></i>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
-                                    <span>Premium Stake Bot Access</span>
-                                    <i class="icon-min m-0 icon-check text-right"></i>
-                                </li>
-                            </ul>
-                            <a href="https://members.fantastic99reborn.web.id/members/checkout/3" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Stake -->
-                <div class="row text-center intro">
-                    <div class="col-12">
-                        <h2 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">BUY WOLF BOT LICENSE WITH PREMIUM SERVICE</h2>
-                    </div>
-                </div>
-                <div class="row justify-content-center text-center items">
-                    <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
-                        <div class="card">
-                            <i class="icon icon-handbag"></i>
-                            <h4>7 Days</h4>
-                            <span class="price">75<i>IDR</i></span>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
-                                    <span>7 Days Active License</span>
-                                    <i class="icon-min m-0 icon-check text-right"></i>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
-                                    <span>Premium Wolf Bot Access</span>
-                                    <i class="icon-min m-0 icon-check text-right"></i>
-                                </li>
-                            </ul>
-                            <a href="https://members.fantastic99reborn.web.id/members/checkout/4" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
-                        <div class="card">
-                            <i class="icon icon-fire"></i>
-                            <h4>1 Month</h4>
-                            <span class="price">250<i>IDR</i></span>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
-                                    <span>1 Month Active License</span>
-                                    <i class="icon-min m-0 icon-check text-right"></i>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
-                                    <span>Premium Wolf Bot Access</span>
-                                    <i class="icon-min m-0 icon-check text-right"></i>
-                                </li>
-                            </ul>
-                            <a href="https://members.fantastic99reborn.web.id/members/checkout/5" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 align-self-center text-center item">
-                        <div class="card">
-                            <i class="icon icon-diamond"></i>
-                            <h4>1 Years</h4>
-                            <span class="price">2.500<i>IDR</i></span>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
-                                    <span>1 Year Active License</span>
-                                    <i class="icon-min m-0 icon-check text-right"></i>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center text-left">
-                                    <span>Premium Wolf Bot Access</span>
-                                    <i class="icon-min m-0 icon-check text-right"></i>
-                                </li>
-                            </ul>
-                            <a href="https://members.fantastic99reborn.web.id/members/checkout/6" target="_blank" class="btn mx-auto primary-button"><i class="icon-arrow-right-circle"></i>BUY NOW</a>
-                        </div>
+                    <div class="col-12 col-md-6 p-3 text-center text-lg-right">
+                        <p>© 2023 Fantastic99 is Proudly Powered by <a href="https://fantastic99Bot.com"
+                                target="_blank">Fantastic99 BOT Dev</a>.</p>
                     </div>
                 </div>
             </div>
         </section>
-        
-        
-        <!-- Footer -->
-        <footer class="odd">
 
-            <!-- Copyright -->
-            <section id="copyright" class="p-3 copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-6 p-3 text-center text-lg-left">
-                            <p>Enjoy the free price. We are tracking any intention of privacy.</p>
-                            <!--
-                                Suggestion: Replace the text above with a description of your website.
-                             -->
+    </footer>
+
+    <!-- #region Global ============================ -->
+
+    <!-- Modal [search] -->
+    <div id="search" class="p-0 modal fade" role="dialog" aria-labelledby="search" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-slideout" role="document">
+            <div class="modal-content full">
+                <div class="modal-header" data-dismiss="modal">
+                    Search <i class="icon-close"></i>
+                </div>
+                <div class="modal-body">
+                    <form class="row">
+                        <div class="col-12 p-0 align-self-center">
+                            <div class="row">
+                                <div class="col-12 p-0 pb-3">
+                                    <h2>What are you looking for?</h2>
+                                    <p>Search for services and news about the best that happens in the world.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 p-0 input-group">
+                                    <input type="text" class="form-control" placeholder="Enter Keywords">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 p-0 input-group align-self-center">
+                                    <button class="btn primary-button"><i class="icon-magnifier"></i>SEARCH</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 p-3 text-center text-lg-right">
-                            <p>© 2023 Fantastic99 is Proudly Powered by <a href="https://fantastic99Bot.com" target="_blank">Fantastic99 BOT Dev</a>.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal [sign] -->
+    <div id="sign" class="p-0 modal fade" role="dialog" aria-labelledby="sign" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-slideout" role="document">
+            <div class="modal-content full">
+                <div class="modal-header" data-dismiss="modal">
+                    Sign In Form <i class="icon-close"></i>
+                </div>
+                <div class="modal-body">
+                    <form action="/" class="row">
+                        <div class="col-12 p-0 align-self-center">
+                            <div class="row">
+                                <div class="col-12 p-0 pb-3">
+                                    <h2>Sign In</h2>
+                                    <p>Don't have an account? <a href="#" class="primary-color" data-toggle="modal"
+                                            data-target="#register">Register now</a>.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 p-0 input-group">
+                                    <input type="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="col-12 p-0 input-group">
+                                    <input type="password" class="form-control" placeholder="Password" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 p-0 input-group align-self-center">
+                                    <button class="btn primary-button"><i class="icon-login"></i>LOGIN</button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-        </footer>
-
-        <!-- #region Global ============================ -->
-
-        <!-- Modal [search] -->
-        <div id="search" class="p-0 modal fade" role="dialog" aria-labelledby="search" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-slideout" role="document">
-                <div class="modal-content full">
-                    <div class="modal-header" data-dismiss="modal">
-                        Search <i class="icon-close"></i>
-                    </div>
-                    <div class="modal-body">
-                        <form class="row">
-                            <div class="col-12 p-0 align-self-center">
-                                <div class="row">
-                                    <div class="col-12 p-0 pb-3">
-                                        <h2>What are you looking for?</h2>
-                                        <p>Search for services and news about the best that happens in the world.</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 p-0 input-group">
-                                        <input type="text" class="form-control" placeholder="Enter Keywords">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 p-0 input-group align-self-center">
-                                        <button class="btn primary-button"><i class="icon-magnifier"></i>SEARCH</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Modal [sign] -->
-        <div id="sign" class="p-0 modal fade" role="dialog" aria-labelledby="sign" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-slideout" role="document">
-                <div class="modal-content full">
-                    <div class="modal-header" data-dismiss="modal">
-                        Sign In Form <i class="icon-close"></i>
-                    </div>
-                    <div class="modal-body">
-                        <form action="/" class="row">
-                            <div class="col-12 p-0 align-self-center">
-                                <div class="row">
-                                    <div class="col-12 p-0 pb-3">
-                                        <h2>Sign In</h2>
-                                        <p>Don't have an account? <a href="#" class="primary-color" data-toggle="modal" data-target="#register">Register now</a>.</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 p-0 input-group">
-                                        <input type="email" class="form-control" placeholder="Email" required>
-                                    </div>
-                                    <div class="col-12 p-0 input-group">
-                                        <input type="password" class="form-control" placeholder="Password" required>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 p-0 input-group align-self-center">
-                                        <button class="btn primary-button"><i class="icon-login"></i>LOGIN</button>
-                                    </div>
+    <!-- Modal [register] -->
+    <div id="register" class="p-0 modal fade" role="dialog" aria-labelledby="register" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-slideout" role="document">
+            <div class="modal-content full">
+                <div class="modal-header" data-dismiss="modal">
+                    Register Form <i class="icon-close"></i>
+                </div>
+                <div class="modal-body">
+                    <form action="/" class="row">
+                        <div class="col-12 p-0 align-self-center">
+                            <div class="row">
+                                <div class="col-12 p-0 pb-3">
+                                    <h2>Register</h2>
+                                    <p>Have an account? <a href="#" class="primary-color" data-toggle="modal"
+                                            data-target="#sign">Sign In</a>.</p>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                            <div class="row">
+                                <div class="col-12 p-0 input-group">
+                                    <input type="text" class="form-control" placeholder="Name" required>
+                                </div>
+                                <div class="col-12 p-0 input-group">
+                                    <input type="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="col-12 p-0 input-group">
+                                    <input type="password" class="form-control" placeholder="Password" required>
+                                </div>
+                                <div class="col-12 p-0 input-group">
+                                    <input type="password" class="form-control" placeholder="Confirm Password" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 p-0 input-group align-self-center">
+                                    <button class="btn primary-button"><i class="icon-rocket"></i>REGISTER</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Modal [register] -->
-        <div id="register" class="p-0 modal fade" role="dialog" aria-labelledby="register" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-slideout" role="document">
-                <div class="modal-content full">
-                    <div class="modal-header" data-dismiss="modal">
-                        Register Form <i class="icon-close"></i>
-                    </div>
-                    <div class="modal-body">
-                        <form action="/" class="row">
-                            <div class="col-12 p-0 align-self-center">
-                                <div class="row">
-                                    <div class="col-12 p-0 pb-3">
-                                        <h2>Register</h2>
-                                        <p>Have an account? <a href="#" class="primary-color" data-toggle="modal" data-target="#sign">Sign In</a>.</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 p-0 input-group">
-                                        <input type="text" class="form-control" placeholder="Name" required>
-                                    </div>
-                                    <div class="col-12 p-0 input-group">
-                                        <input type="email" class="form-control" placeholder="Email" required>
-                                    </div>
-                                    <div class="col-12 p-0 input-group">
-                                        <input type="password" class="form-control" placeholder="Password" required>
-                                    </div>
-                                    <div class="col-12 p-0 input-group">
-                                        <input type="password" class="form-control" placeholder="Confirm Password" required>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 p-0 input-group align-self-center">
-                                        <button class="btn primary-button"><i class="icon-rocket"></i>REGISTER</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+    <!-- Modal [responsive menu] -->
+    <div id="menu" class="p-0 modal fade" role="dialog" aria-labelledby="menu" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-slideout" role="document">
+            <div class="modal-content full">
+                <div class="modal-header" data-dismiss="modal">
+                    Menu <i class="icon-close"></i>
                 </div>
-            </div>
-        </div>
-
-        <!-- Modal [responsive menu] -->
-        <div id="menu" class="p-0 modal fade" role="dialog" aria-labelledby="menu" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-slideout" role="document">
-                <div class="modal-content full">
-                    <div class="modal-header" data-dismiss="modal">
-                        Menu <i class="icon-close"></i>
-                    </div>
-                    <div class="menu modal-body">
-                        <div class="row w-100">
-                            <div class="items p-0 col-12 text-center">
-                                <!-- Append [navbar] -->
-                            </div>
-                            <div class="contacts p-0 col-12 text-center">
-                                <!-- Append [navbar] -->
-                            </div>
+                <div class="menu modal-body">
+                    <div class="row w-100">
+                        <div class="items p-0 col-12 text-center">
+                            <!-- Append [navbar] -->
+                        </div>
+                        <div class="contacts p-0 col-12 text-center">
+                            <!-- Append [navbar] -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Scroll [to top] -->
-        <div id="scroll-to-top" class="scroll-to-top">
-            <a href="#header" class="smooth-anchor">
-                <i class="icon-arrow-up"></i>
-            </a>
-        </div>        
-        
-        <!-- ==============================================
+    <!-- Scroll [to top] -->
+    <div id="scroll-to-top" class="scroll-to-top">
+        <a href="#header" class="smooth-anchor">
+            <i class="icon-arrow-up"></i>
+        </a>
+    </div>
+
+    <!-- ==============================================
         Google reCAPTCHA // Put your site key here
         =============================================== -->
-        <script src="https://www.google.com/recaptcha/api.js?render=6Lf-NwEVAAAAAPo_wwOYxFW18D9_EKvwxJxeyUx7"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf-NwEVAAAAAPo_wwOYxFW18D9_EKvwxJxeyUx7"></script>
 
-        <!-- ==============================================
+    <!-- ==============================================
         Vendor Scripts
         =============================================== -->
-        <script src="assets/js/vendor/jquery.min.js"></script>
-        <script src="assets/js/vendor/jquery.easing.min.js"></script>
-        <script src="assets/js/vendor/jquery.inview.min.js"></script>
-        <script src="assets/js/vendor/popper.min.js"></script>
-        <script src="assets/js/vendor/bootstrap.min.js"></script>
-        <script src="assets/js/vendor/ponyfill.min.js"></script>
-        <script src="assets/js/vendor/slider.min.js"></script>
-        <script src="assets/js/vendor/animation.min.js"></script>
-        <script src="assets/js/vendor/progress-radial.min.js"></script>
-        <script src="assets/js/vendor/bricklayer.min.js"></script>
-        <script src="assets/js/vendor/gallery.min.js"></script>
-        <script src="assets/js/vendor/shuffle.min.js"></script>
-        <script src="assets/js/vendor/cookie-notice.min.js"></script>
-        <script src="assets/js/vendor/particles.min.js"></script>
-        <!-- Vanilla Tilt JS for Interactive 3D hover effects -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script src="assets/js/order.js"></script>
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="assets/js/vendor/jquery.easing.min.js"></script>
+    <script src="assets/js/vendor/jquery.inview.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/ponyfill.min.js"></script>
+    <script src="assets/js/vendor/slider.min.js"></script>
+    <script src="assets/js/vendor/animation.min.js"></script>
+    <script src="assets/js/vendor/progress-radial.min.js"></script>
+    <script src="assets/js/vendor/bricklayer.min.js"></script>
+    <script src="assets/js/vendor/gallery.min.js"></script>
+    <script src="assets/js/vendor/shuffle.min.js"></script>
+    <script src="assets/js/vendor/cookie-notice.min.js"></script>
+    <script src="assets/js/vendor/particles.min.js"></script>
+    <!-- Vanilla Tilt JS for Interactive 3D hover effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/order.js"></script>
 
-        <!-- #endregion Global ========================= -->
+    <!-- #endregion Global ========================= -->
 
-    </body>
+</body>
+
 </html>
